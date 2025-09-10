@@ -151,7 +151,7 @@ function App() {
             <div className="grid md:grid-cols-2 gap-8">
               <div className="bg-white p-8 rounded-2xl shadow-lg">
                 <h3 className="text-2xl font-bold text-purple-600 mb-4">¿Cuándo?</h3>
-                <p className="text-gray-700 text-lg mb-2">📅 Sábado, 15 de Marzo 2025</p>
+                <p className="text-gray-700 text-lg mb-2">📅 Sábado, 13 de Septiembre 2025</p>
                 <p className="text-gray-700 text-lg mb-2">🕕 6:00 PM - 10:00 PM</p>
                 <p className="text-gray-700 text-lg">📍 Centro de Convenciones Corferias, Bogotá</p>
               </div>
