@@ -92,8 +92,10 @@ html {
   line-height: 1.6 !important;
 }
 
+/* SweetAlert2 Success Icon Fix */
 .swal2-icon.swal2-success {
   border-color: #ec4899 !important;
+  color: #ec4899 !important;
 }
 
 .swal2-icon.swal2-success .swal2-success-ring {
@@ -101,9 +103,44 @@ html {
 }
 
 .swal2-icon.swal2-success .swal2-success-fix {
-  background-color: #ec4899 !important;
+  background-color: #ffffff !important;
 }
 
 .swal2-icon.swal2-success [class^='swal2-success-line'] {
   background-color: #ec4899 !important;
+}
+
+.swal2-icon.swal2-success .swal2-success-line-tip {
+  background-color: #ec4899 !important;
+  left: 1.0625em !important;
+  top: 2.875em !important;
+  width: 1.5625em !important;
+  transform: rotate(45deg) !important;
+}
+
+.swal2-icon.swal2-success .swal2-success-line-long {
+  background-color: #ec4899 !important;
+  right: 0.5em !important;
+  top: 2.375em !important;
+  width: 2.9375em !important;
+  transform: rotate(-45deg) !important;
+}
+
+/* Alternative: Hide the problematic check and use a better one */
+.swal2-icon.swal2-success::after {
+  content: '✓' !important;
+  font-size: 3.75em !important;
+  color: #ec4899 !important;
+  position: absolute !important;
+  left: 50% !important;
+  top: 50% !important;
+  transform: translate(-50%, -50%) !important;
+  font-weight: bold !important;
+  z-index: 10 !important;
+}
+
+.swal2-icon.swal2-success .swal2-success-ring,
+.swal2-icon.swal2-success .swal2-success-fix,
+.swal2-icon.swal2-success [class^='swal2-success-line'] {
+  display: none !important;
 }
