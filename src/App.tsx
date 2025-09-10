@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import Swal from 'sweetalert2'
 import 'animate.css'
+import logoUrl from '/logo/makeup_vibes_2025.jpeg'
 import './App.css'
 
 function App() {
@@ -52,7 +53,7 @@ function App() {
         <nav className="container mx-auto px-6 py-4 flex items-center justify-between">
           <div className="flex items-center space-x-3">
             <img 
-              src="/logo/makeup_vibes_2025.jpeg" 
+              src={logoUrl} 
               alt="Masglo Logo" 
               className="w-16 h-16 rounded-full object-cover shadow-md"
             />
@@ -282,7 +283,7 @@ function App() {
             <div>
               <div className="flex items-center space-x-3 mb-4">
                 <img 
-                  src="/logo/makeup_vibes_2025.jpeg" 
+                  src={logoUrl} 
                   alt="Masglo Logo" 
                   className="w-12 h-12 rounded-full object-cover"
                 />
