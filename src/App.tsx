@@ -2,6 +2,10 @@ import { useState } from 'react'
 import Swal from 'sweetalert2'
 import 'animate.css'
 import logoUrl from '/logo/makeup_vibes_2025.jpeg'
+import labial from '/public/logo/LogoLabialMasglo.jpg'
+import BaseMaquillaje from '/public/logo/LogoBaseMasglo.jpg'
+import PaletaSombras from '/public/logo/LogoRuborMasglo.jpeg'
+
 import './App.css'
 
 function App() {
@@ -87,6 +91,7 @@ function App() {
           <p className="text-xl md:text-2xl text-gray-700 mb-8 leading-relaxed">
             Descubre la nueva colección de maquillaje que revolucionará tu belleza. 
             Un evento único donde la creatividad y la inclusión se encuentran.
+            No te pierdas la oportunidad de ser parte de esta experiencia inolvidable.
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center items-center">
             <button 
@@ -111,30 +116,30 @@ function App() {
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold text-gray-800 mb-4">Makeup Vibe Collection</h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Una línea completa diseñada para realzar tu belleza natural y expresar tu personalidad única
+              Una línea completa diseñada para realzar tu belleza natural y expresar tu personalidad única, fortaliciendo la confianza en cada look y enamorando a todos con su versatilidad. 
             </p>
           </div>
           
           <div className="grid md:grid-cols-3 gap-8">
             <div className="bg-gradient-to-br from-pink-100 to-purple-100 p-8 rounded-2xl text-center">
-              <div className="w-16 h-16 bg-pink-500 rounded-full mx-auto mb-4 flex items-center justify-center">
-                <span className="text-white text-2xl">💄</span>
+              <div className="w-36 h-36 bg-white rounded-full mx-auto mb-6 flex items-center justify-center shadow-md">
+                <img src={labial} alt="Labiales Vibrantes" className='w-24 h-24 object-contain' />
               </div>
               <h3 className="text-xl font-bold text-gray-800 mb-3">Labiales Vibrantes</h3>
               <p className="text-gray-600">12 tonos únicos que se adaptan a todos los tipos de piel</p>
             </div>
             
             <div className="bg-gradient-to-br from-purple-100 to-pink-100 p-8 rounded-2xl text-center">
-              <div className="w-16 h-16 bg-purple-500 rounded-full mx-auto mb-4 flex items-center justify-center">
-                <span className="text-white text-2xl">✨</span>
+              <div className="w-36 h-36 bg-white rounded-full mx-auto mb-6 flex items-center justify-center shadow-md">
+                  <img src={PaletaSombras} alt="Paletas de Sombras" className='w-24 h-24 object-contain' />
               </div>
               <h3 className="text-xl font-bold text-gray-800 mb-3">Paletas de Sombras</h3>
               <p className="text-gray-600">Combinaciones perfectas para looks diurnos y nocturnos</p>
             </div>
             
             <div className="bg-gradient-to-br from-pink-100 to-purple-100 p-8 rounded-2xl text-center">
-              <div className="w-16 h-16 bg-gradient-to-r from-pink-500 to-purple-500 rounded-full mx-auto mb-4 flex items-center justify-center">
-                <span className="text-white text-2xl">🌟</span>
+              <div className="w-36 h-36 bg-white rounded-full mx-auto mb-6 flex items-center justify-center shadow-md">
+                <img src={BaseMaquillaje} alt="Base Inclusiva" className='w-24 h-24 object-contain' />
               </div>
               <h3 className="text-xl font-bold text-gray-800 mb-3">Base Inclusiva</h3>
               <p className="text-gray-600">20 tonos que celebran la diversidad de la belleza colombiana</p>
@@ -257,7 +262,17 @@ function App() {
               Nos enorgullecemos de crear productos que celebran la diversidad y realzan la belleza 
               natural de cada persona, sin importar su edad, color de piel o estilo.
             </p>
-            
+             <h2 className="text-4xl font-bold text-gray-800 mb-8">Nuestra Misión con la belleza</h2>
+            <p className="text-lg text-gray-700 mb-8 leading-relaxed">
+              Ser los aliados de la belleza de nuestros clientes, entregando tendencias, colores y productos que
+              transformen sus vidas.
+            </p>
+             <h2 className="text-4xl font-bold text-gray-800 mb-8">Visión y Marca</h2>
+            <p className="text-lg text-gray-700 mb-8 leading-relaxed">
+              Ser una empresa con visión global en el campo de la cosmética, con marcas altamente reconocidas y
+              consideradas por su desempeño funcional, su conexión emocional y su responsabilidad en temas
+              sociales y ambientales.
+            </p>
             <div className="grid md:grid-cols-3 gap-8 mt-12">
               <div className="text-center">
                 <div className="text-4xl font-bold text-purple-600 mb-2">30+</div>
